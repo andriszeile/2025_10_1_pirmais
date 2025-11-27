@@ -5,8 +5,7 @@ function calculateLinolium() {
     let linoliumPrice = parseFloat(document.getElementById("linoliumPrice").value);
 
 
-
-    let stripsNeededCross = Math.ceil(roomWidth/linoliumWidth);
+    let stripsNeededCross = Math.ceil(roomLenght/linoliumWidth);
     let linoliumLenghtCross = stripsNeededCross * roomWidth;
     let linoliumAreaCross = linoliumLenghtCross * linoliumWidth;
     let costCross = linoliumAreaCross * linoliumPrice;
